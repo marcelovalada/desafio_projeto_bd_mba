@@ -4,7 +4,7 @@
 Este projeto simula um sistema de chamados técnicos (help desk). O objetivo é modelar um banco de dados relacional capaz de armazenar e recuperar informações de usuários, técnicos, chamados e interações.
 
 ## Equipe
-- Marcelo da Silva Valada
+- Marcelo da Silva Valada Segundo
 - Pedro Henrique Correia de Araujo Souto Leal
 
 ## Tecnologias
@@ -17,7 +17,6 @@ Este projeto simula um sistema de chamados técnicos (help desk). O objetivo é 
 - `1_scripts_tabelas.sql`: Criação de tabelas no banco
 - `2_scripts_dados.sql`: Inserção de dados
 - `3_scripts_analises.sql`: Consultas relevantes ao negócio
-- `4_scripts_adicionais.sql`: Consultas com LEFT/RIGHT JOIN, HAVING, LIMIT e operações UPDATE/DELETE
 - `docker-compose.yml`: Arquivo de configuração do Docker
 
 ## Exemplos de Consultas para análises
@@ -60,28 +59,6 @@ docker-compose up -d
    - Usuário: postgres
    - Senha: postgres
    - Banco de dados: postgres
-   
-### Executando os Scripts SQL
-
-1. Após conectar ao servidor PostgreSQL no pgAdmin:
-   - Clique com botão direito no servidor > Query Tool
-   - Abra e execute os scripts na seguinte ordem:
-
-2. Para criar o banco e as tabelas:
-   - Abra `1_scripts_tabelas.sql`
-   - Execute (botão F5 ou ícone de play)
-   - **Importante:** Após criar o banco de dados "helpdesk", conecte-se a ele antes de continuar
-   
-3. Para inserir dados de exemplo:
-   - Certifique-se de estar conectado ao banco "helpdesk"
-   - Abra e execute `2_scripts_dados.sql`
-
-4. Para executar consultas de análise:
-   - Abra e execute `3_scripts_analises.sql`
-   
-5. Para exemplos de LEFT/RIGHT JOIN, HAVING, LIMIT e operações UPDATE/DELETE:
-   - Abra e execute `4_scripts_adicionais.sql`
-   - **Nota:** Os comandos DELETE estão comentados para segurança
 
 ## Parar os serviços
 
