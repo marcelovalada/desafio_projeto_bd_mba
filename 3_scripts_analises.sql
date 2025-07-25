@@ -6,6 +6,7 @@ FROM tecnico t
 JOIN chamado c ON t.id_tecnico = c.id_tecnico
 WHERE c.status = 'fechado'
 GROUP BY t.nome
+HAVING COUNT(ch.id_chamado) > 3
 ORDER BY chamados_fechados DESC;
 
 -- 2. Quantidade de chamados criados por categoria
