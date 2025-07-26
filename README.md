@@ -67,5 +67,5 @@ Para parar os serviços, execute:
 docker-compose down
 ```
 
-#Link do projeto no GitHub
-https://github.com/marcelovalada/desafio_projeto_bd_mba
+#Link para Hackathon - Projeto 2
+[link do hackathon](https://github.com/rennegomes/hackathon_MBA)
